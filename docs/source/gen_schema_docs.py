@@ -13,6 +13,7 @@ import schema_doc_helpers as sh
 
 scf_props = qcschema.dev.properties.scf_properties.scf_properties
 mp_props = qcschema.dev.properties.mp_properties.mp_properties
+cc_props = qcschema.dev.properties.cc_properties.cc_properties
 calcinfo_props = qcschema.dev.properties.calcinfo_properties.calcinfo_properties
 
 ### Schema Properties
@@ -35,6 +36,9 @@ both Hartree--Fock and Density Functional Theory.
     ("Moller-Plesset", """
 A list of fields added at the Moller-Plesset (MP) level.
 """, mp_props),
+    ("Coupled cluster", """
+A list of fields added at the Coupled cluster (CC) level.
+""", cc_props),
 ]
 
 for cat in prop_categories:
